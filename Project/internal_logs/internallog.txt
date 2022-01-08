@@ -1,0 +1,1017 @@
+Info Message Template Auto Format enabled
+Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+Debug Setting 'NLog.Targets.FileTarget.fileName' to 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Info Adding target FileTarget(Name=logfile)
+Debug Registered target logfile: NLog.Targets.FileTarget
+Trace ParseRulesElement
+Debug Watching file-filter 'nlog.config' in directory: C:\Users\USER\source\repos\StudentTeacher\StudentTeacher
+Debug --- NLog configuration dump ---
+Debug Targets:
+Debug FileTarget(Name=logfile)
+Debug Rules:
+Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+Debug --- End of NLog configuration dump ---
+Trace FindReachableObject<System.Object>:
+Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace   Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace   Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace   Scanning Property LineEnding 'Default' NLog.Targets
+Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\USER\source\repos\StudentTeacher\StudentTeacher/nlog.config
+Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+Trace Initializing Layout Renderer: ${message}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${level}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${longdate}
+Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${shortdate}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace Initializing FileTarget(Name=logfile)
+Trace FindReachableObject<NLog.Layouts.Layout>:
+Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace  Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace  Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LineEnding 'Default' NLog.Targets
+Trace FileTarget(Name=logfile) has 2 layouts
+Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+Debug FileTarget(Name=logfile): Preparing for new file 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt'
+Debug FileTarget(Name=logfile): Creating file appender: c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt
+Trace FileTarget(Name=logfile): Opening c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt with allowFileSharedWriting=False
+Debug FileTarget(Name=logfile): DirectoryNotFoundException - Attempting to create directory for FileName: c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt
+Info AppDomain Shutting down. LogFactory closing...
+Debug Stopping file watching for path 'C:\Users\USER\source\repos\StudentTeacher\StudentTeacher' filter 'nlog.config'
+Trace Flushing all 1 targets...
+Trace ForEachItemInParallel() 1 items
+Trace FileTarget(Name=logfile): FlushAsync
+Trace Continuation invoked: 
+Trace Parallel task completed. 0 items remaining
+Debug Flush completed
+Trace FileTarget(Name=logfile): FlushAsync Done
+Debug Targets not configured for Logger: StudentTeacher.Service.Services.LoggerManager
+Debug Closing logging configuration...
+Trace Closing FileTarget(Name=logfile)
+Debug FileTarget(Name=logfile): Closing...
+Trace FileTarget(Name=logfile): FinalizeFile 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt, isArchiving: False'
+Debug FileTarget(Name=logfile): FileAppender Closing Invalidate - c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt
+Trace FileTarget: Closing 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt'
+Debug FileTarget(Name=logfile): Closed.
+Trace Closing c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt
+Trace Closing Layout Renderer: ${literal}
+Trace Closing Layout Renderer: ${shortdate}
+Trace Closing Layout Renderer: ${literal}
+Trace Closing ${longdate} ${level:uppercase=true} ${message}
+Trace Closing Layout Renderer: ${longdate}
+Trace Closing Layout Renderer: ${literal}
+Trace Closing Layout Renderer: ${level}
+Trace Closing Layout Renderer: ${literal}
+Trace Closing Layout Renderer: ${message}
+Debug Finished closing logging configuration.
+Info LogFactory has been closed.
+Info Message Template Auto Format enabled
+Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+Debug Setting 'NLog.Targets.FileTarget.fileName' to 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Info Adding target FileTarget(Name=logfile)
+Debug Registered target logfile: NLog.Targets.FileTarget
+Trace ParseRulesElement
+Debug Watching file-filter 'nlog.config' in directory: C:\Users\USER\source\repos\StudentTeacher\StudentTeacher
+Debug --- NLog configuration dump ---
+Debug Targets:
+Debug FileTarget(Name=logfile)
+Debug Rules:
+Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+Debug --- End of NLog configuration dump ---
+Trace FindReachableObject<System.Object>:
+Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace   Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace   Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace   Scanning Property LineEnding 'Default' NLog.Targets
+Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\USER\source\repos\StudentTeacher\StudentTeacher/nlog.config
+Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+Trace Initializing Layout Renderer: ${message}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${level}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${longdate}
+Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${shortdate}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace Initializing FileTarget(Name=logfile)
+Trace FindReachableObject<NLog.Layouts.Layout>:
+Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace  Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace  Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LineEnding 'Default' NLog.Targets
+Trace FileTarget(Name=logfile) has 2 layouts
+Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+Info AppDomain Shutting down. LogFactory closing...
+Debug Stopping file watching for path 'C:\Users\USER\source\repos\StudentTeacher\StudentTeacher' filter 'nlog.config'
+Trace Flushing all 1 targets...
+Trace ForEachItemInParallel() 1 items
+Trace FileTarget(Name=logfile): FlushAsync
+Trace Continuation invoked: 
+Trace Parallel task completed. 0 items remaining
+Debug Flush completed
+Trace FileTarget(Name=logfile): FlushAsync Done
+Debug Closing logging configuration...
+Trace Closing FileTarget(Name=logfile)
+Debug FileTarget(Name=logfile): Closing...
+Debug FileTarget(Name=logfile): Closed.
+Trace Closing c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt
+Trace Closing Layout Renderer: ${literal}
+Trace Closing Layout Renderer: ${shortdate}
+Trace Closing Layout Renderer: ${literal}
+Trace Closing ${longdate} ${level:uppercase=true} ${message}
+Trace Closing Layout Renderer: ${longdate}
+Trace Closing Layout Renderer: ${literal}
+Trace Closing Layout Renderer: ${level}
+Trace Closing Layout Renderer: ${literal}
+Trace Closing Layout Renderer: ${message}
+Debug Finished closing logging configuration.
+Info LogFactory has been closed.
+Info Message Template Auto Format enabled
+Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+Debug Setting 'NLog.Targets.FileTarget.fileName' to 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Info Adding target FileTarget(Name=logfile)
+Debug Registered target logfile: NLog.Targets.FileTarget
+Trace ParseRulesElement
+Debug Watching file-filter 'nlog.config' in directory: C:\Users\USER\source\repos\StudentTeacher\StudentTeacher
+Debug --- NLog configuration dump ---
+Debug Targets:
+Debug FileTarget(Name=logfile)
+Debug Rules:
+Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+Debug --- End of NLog configuration dump ---
+Trace FindReachableObject<System.Object>:
+Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace   Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace   Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace   Scanning Property LineEnding 'Default' NLog.Targets
+Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\USER\source\repos\StudentTeacher\StudentTeacher/nlog.config
+Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+Trace Initializing Layout Renderer: ${message}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${level}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${longdate}
+Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${shortdate}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace Initializing FileTarget(Name=logfile)
+Trace FindReachableObject<NLog.Layouts.Layout>:
+Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace  Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace  Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LineEnding 'Default' NLog.Targets
+Trace FileTarget(Name=logfile) has 2 layouts
+Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+Info AppDomain Shutting down. LogFactory closing...
+Debug Stopping file watching for path 'C:\Users\USER\source\repos\StudentTeacher\StudentTeacher' filter 'nlog.config'
+Trace Flushing all 1 targets...
+Trace ForEachItemInParallel() 1 items
+Trace FileTarget(Name=logfile): FlushAsync
+Trace Continuation invoked: 
+Trace Parallel task completed. 0 items remaining
+Debug Flush completed
+Trace FileTarget(Name=logfile): FlushAsync Done
+Debug Closing logging configuration...
+Trace Closing FileTarget(Name=logfile)
+Debug FileTarget(Name=logfile): Closing...
+Debug FileTarget(Name=logfile): Closed.
+Trace Closing c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt
+Trace Closing Layout Renderer: ${literal}
+Trace Closing Layout Renderer: ${shortdate}
+Trace Closing Layout Renderer: ${literal}
+Trace Closing ${longdate} ${level:uppercase=true} ${message}
+Trace Closing Layout Renderer: ${longdate}
+Trace Closing Layout Renderer: ${literal}
+Trace Closing Layout Renderer: ${level}
+Trace Closing Layout Renderer: ${literal}
+Trace Closing Layout Renderer: ${message}
+Debug Finished closing logging configuration.
+Info LogFactory has been closed.
+Info Message Template Auto Format enabled
+Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+Debug Setting 'NLog.Targets.FileTarget.fileName' to 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Info Adding target FileTarget(Name=logfile)
+Debug Registered target logfile: NLog.Targets.FileTarget
+Trace ParseRulesElement
+Debug Watching file-filter 'nlog.config' in directory: C:\Users\USER\source\repos\StudentTeacher\StudentTeacher
+Debug --- NLog configuration dump ---
+Debug Targets:
+Debug FileTarget(Name=logfile)
+Debug Rules:
+Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+Debug --- End of NLog configuration dump ---
+Trace FindReachableObject<System.Object>:
+Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace   Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace   Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace   Scanning Property LineEnding 'Default' NLog.Targets
+Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\USER\source\repos\StudentTeacher\StudentTeacher/nlog.config
+Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+Trace Initializing Layout Renderer: ${message}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${level}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${longdate}
+Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${shortdate}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace Initializing FileTarget(Name=logfile)
+Trace FindReachableObject<NLog.Layouts.Layout>:
+Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace  Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace  Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LineEnding 'Default' NLog.Targets
+Trace FileTarget(Name=logfile) has 2 layouts
+Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+Info AppDomain Shutting down. LogFactory closing...
+Debug Stopping file watching for path 'C:\Users\USER\source\repos\StudentTeacher\StudentTeacher' filter 'nlog.config'
+Trace Flushing all 1 targets...
+Trace ForEachItemInParallel() 1 items
+Trace FileTarget(Name=logfile): FlushAsync
+Trace Continuation invoked: 
+Trace Parallel task completed. 0 items remaining
+Debug Flush completed
+Trace FileTarget(Name=logfile): FlushAsync Done
+Debug Closing logging configuration...
+Trace Closing FileTarget(Name=logfile)
+Debug FileTarget(Name=logfile): Closing...
+Debug FileTarget(Name=logfile): Closed.
+Trace Closing c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt
+Trace Closing Layout Renderer: ${literal}
+Trace Closing Layout Renderer: ${shortdate}
+Trace Closing Layout Renderer: ${literal}
+Trace Closing ${longdate} ${level:uppercase=true} ${message}
+Trace Closing Layout Renderer: ${longdate}
+Trace Closing Layout Renderer: ${literal}
+Trace Closing Layout Renderer: ${level}
+Trace Closing Layout Renderer: ${literal}
+Trace Closing Layout Renderer: ${message}
+Debug Finished closing logging configuration.
+Info LogFactory has been closed.
+Info Message Template Auto Format enabled
+Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+Debug Setting 'NLog.Targets.FileTarget.fileName' to 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Info Adding target FileTarget(Name=logfile)
+Debug Registered target logfile: NLog.Targets.FileTarget
+Trace ParseRulesElement
+Debug Watching file-filter 'nlog.config' in directory: C:\Users\USER\source\repos\StudentTeacher\StudentTeacher
+Debug --- NLog configuration dump ---
+Debug Targets:
+Debug FileTarget(Name=logfile)
+Debug Rules:
+Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+Debug --- End of NLog configuration dump ---
+Trace FindReachableObject<System.Object>:
+Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace   Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace   Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace   Scanning Property LineEnding 'Default' NLog.Targets
+Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\USER\source\repos\StudentTeacher\StudentTeacher/nlog.config
+Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+Trace Initializing Layout Renderer: ${message}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${level}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${longdate}
+Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${shortdate}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace Initializing FileTarget(Name=logfile)
+Trace FindReachableObject<NLog.Layouts.Layout>:
+Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace  Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace  Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LineEnding 'Default' NLog.Targets
+Trace FileTarget(Name=logfile) has 2 layouts
+Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+Debug FileTarget(Name=logfile): Preparing for new file 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt'
+Debug FileTarget(Name=logfile): Creating file appender: c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt
+Trace FileTarget(Name=logfile): Opening c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt with allowFileSharedWriting=False
+Info Message Template Auto Format enabled
+Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+Debug Setting 'NLog.Targets.FileTarget.fileName' to 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Info Adding target FileTarget(Name=logfile)
+Debug Registered target logfile: NLog.Targets.FileTarget
+Trace ParseRulesElement
+Debug Watching file-filter 'nlog.config' in directory: C:\Users\USER\source\repos\StudentTeacher\StudentTeacher
+Debug --- NLog configuration dump ---
+Debug Targets:
+Debug FileTarget(Name=logfile)
+Debug Rules:
+Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+Debug --- End of NLog configuration dump ---
+Trace FindReachableObject<System.Object>:
+Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace   Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace   Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace   Scanning Property LineEnding 'Default' NLog.Targets
+Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\USER\source\repos\StudentTeacher\StudentTeacher/nlog.config
+Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+Trace Initializing Layout Renderer: ${message}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${level}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${longdate}
+Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${shortdate}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace Initializing FileTarget(Name=logfile)
+Trace FindReachableObject<NLog.Layouts.Layout>:
+Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace  Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace  Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LineEnding 'Default' NLog.Targets
+Trace FileTarget(Name=logfile) has 2 layouts
+Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+Info Message Template Auto Format enabled
+Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+Debug Setting 'NLog.Targets.FileTarget.fileName' to 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Info Adding target FileTarget(Name=logfile)
+Debug Registered target logfile: NLog.Targets.FileTarget
+Trace ParseRulesElement
+Debug Watching file-filter 'nlog.config' in directory: C:\Users\USER\source\repos\StudentTeacher\StudentTeacher
+Debug --- NLog configuration dump ---
+Debug Targets:
+Debug FileTarget(Name=logfile)
+Debug Rules:
+Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+Debug --- End of NLog configuration dump ---
+Trace FindReachableObject<System.Object>:
+Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace   Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace   Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace   Scanning Property LineEnding 'Default' NLog.Targets
+Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\USER\source\repos\StudentTeacher\StudentTeacher/nlog.config
+Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+Trace Initializing Layout Renderer: ${message}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${level}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${longdate}
+Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${shortdate}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace Initializing FileTarget(Name=logfile)
+Trace FindReachableObject<NLog.Layouts.Layout>:
+Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace  Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace  Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LineEnding 'Default' NLog.Targets
+Trace FileTarget(Name=logfile) has 2 layouts
+Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+Debug FileTarget(Name=logfile): Preparing for new file 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt'
+Debug FileTarget(Name=logfile): Creating file appender: c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt
+Trace FileTarget(Name=logfile): Opening c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt with allowFileSharedWriting=False
+Info Message Template Auto Format enabled
+Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+Debug Setting 'NLog.Targets.FileTarget.fileName' to 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Info Adding target FileTarget(Name=logfile)
+Debug Registered target logfile: NLog.Targets.FileTarget
+Trace ParseRulesElement
+Debug Watching file-filter 'nlog.config' in directory: C:\Users\USER\source\repos\StudentTeacher\StudentTeacher
+Debug --- NLog configuration dump ---
+Debug Targets:
+Debug FileTarget(Name=logfile)
+Debug Rules:
+Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+Debug --- End of NLog configuration dump ---
+Trace FindReachableObject<System.Object>:
+Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace   Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace   Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace   Scanning Property LineEnding 'Default' NLog.Targets
+Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\USER\source\repos\StudentTeacher\StudentTeacher/nlog.config
+Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+Trace Initializing Layout Renderer: ${message}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${level}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${longdate}
+Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${shortdate}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace Initializing FileTarget(Name=logfile)
+Trace FindReachableObject<NLog.Layouts.Layout>:
+Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace  Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace  Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LineEnding 'Default' NLog.Targets
+Trace FileTarget(Name=logfile) has 2 layouts
+Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+Debug FileTarget(Name=logfile): Preparing for new file 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt'
+Debug FileTarget(Name=logfile): Creating file appender: c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt
+Trace FileTarget(Name=logfile): Opening c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt with allowFileSharedWriting=False
+Info Message Template Auto Format enabled
+Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+Debug Setting 'NLog.Targets.FileTarget.fileName' to 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Info Adding target FileTarget(Name=logfile)
+Debug Registered target logfile: NLog.Targets.FileTarget
+Trace ParseRulesElement
+Debug Watching file-filter 'nlog.config' in directory: C:\Users\USER\source\repos\StudentTeacher\StudentTeacher
+Debug --- NLog configuration dump ---
+Debug Targets:
+Debug FileTarget(Name=logfile)
+Debug Rules:
+Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+Debug --- End of NLog configuration dump ---
+Trace FindReachableObject<System.Object>:
+Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace   Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace   Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace   Scanning Property LineEnding 'Default' NLog.Targets
+Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\USER\source\repos\StudentTeacher\StudentTeacher/nlog.config
+Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+Trace Initializing Layout Renderer: ${message}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${level}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${longdate}
+Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${shortdate}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace Initializing FileTarget(Name=logfile)
+Trace FindReachableObject<NLog.Layouts.Layout>:
+Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace  Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace  Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LineEnding 'Default' NLog.Targets
+Trace FileTarget(Name=logfile) has 2 layouts
+Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+Debug FileTarget(Name=logfile): Preparing for new file 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt'
+Debug FileTarget(Name=logfile): Creating file appender: c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt
+Trace FileTarget(Name=logfile): Opening c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt with allowFileSharedWriting=False
+Info Message Template Auto Format enabled
+Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+Debug Setting 'NLog.Targets.FileTarget.fileName' to 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Info Adding target FileTarget(Name=logfile)
+Debug Registered target logfile: NLog.Targets.FileTarget
+Trace ParseRulesElement
+Debug Watching file-filter 'nlog.config' in directory: C:\Users\USER\source\repos\StudentTeacher\StudentTeacher
+Debug --- NLog configuration dump ---
+Debug Targets:
+Debug FileTarget(Name=logfile)
+Debug Rules:
+Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+Debug --- End of NLog configuration dump ---
+Trace FindReachableObject<System.Object>:
+Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace   Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace   Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace   Scanning Property LineEnding 'Default' NLog.Targets
+Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\USER\source\repos\StudentTeacher\StudentTeacher/nlog.config
+Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+Trace Initializing Layout Renderer: ${message}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${level}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${longdate}
+Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${shortdate}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace Initializing FileTarget(Name=logfile)
+Trace FindReachableObject<NLog.Layouts.Layout>:
+Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace  Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace  Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LineEnding 'Default' NLog.Targets
+Trace FileTarget(Name=logfile) has 2 layouts
+Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+Debug FileTarget(Name=logfile): Preparing for new file 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt'
+Debug FileTarget(Name=logfile): Creating file appender: c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt
+Trace FileTarget(Name=logfile): Opening c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt with allowFileSharedWriting=False
+Info Message Template Auto Format enabled
+Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+Debug Setting 'NLog.Targets.FileTarget.fileName' to 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Info Adding target FileTarget(Name=logfile)
+Debug Registered target logfile: NLog.Targets.FileTarget
+Trace ParseRulesElement
+Debug Watching file-filter 'nlog.config' in directory: C:\Users\USER\source\repos\StudentTeacher\StudentTeacher
+Debug --- NLog configuration dump ---
+Debug Targets:
+Debug FileTarget(Name=logfile)
+Debug Rules:
+Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+Debug --- End of NLog configuration dump ---
+Trace FindReachableObject<System.Object>:
+Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace   Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace   Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace   Scanning Property LineEnding 'Default' NLog.Targets
+Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\USER\source\repos\StudentTeacher\StudentTeacher/nlog.config
+Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+Trace Initializing Layout Renderer: ${message}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${level}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${longdate}
+Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing Layout Renderer: ${shortdate}
+Trace Initializing Layout Renderer: ${literal}
+Trace Initializing c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt
+Trace FindReachableObject<NLog.Internal.IRenderable>:
+Trace Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+Trace Initializing FileTarget(Name=logfile)
+Trace FindReachableObject<NLog.Layouts.Layout>:
+Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+Trace  Scanning Property FileName 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt' NLog.Layouts
+Trace  Scanning SimpleLayout 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\${shortdate}_logfile.txt'
+Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+Trace  Scanning Property LineEnding 'Default' NLog.Targets
+Trace FileTarget(Name=logfile) has 2 layouts
+Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+Debug FileTarget(Name=logfile): Preparing for new file 'c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt'
+Debug FileTarget(Name=logfile): Creating file appender: c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt
+Trace FileTarget(Name=logfile): Opening c:\\Users\\USER\\source\\repos\\StudentTeacher/Project\logs\2022-01-08_logfile.txt with allowFileSharedWriting=False
