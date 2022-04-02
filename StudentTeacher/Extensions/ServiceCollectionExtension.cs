@@ -30,8 +30,21 @@ public static class ServiceExtension
             map.AddProfile<TeacherMappingProfile>();
             map.AddProfile<StudentMappingProfile>();
         });
-        services.AddSingleton(mapperConfig.CreateMapper());
+        services.AddSingleton(mapperConfig.CreateMapper()); 
     }
+
+
+    public static void ConfigureControllers(this IServiceCollection services)
+    {
+        services.AddControllers(config =>
+        {
+            config.CacheProfiles.Add("30SecondsCaching", new CacheProfile
+            {
+                Duration = 30
+            });
+        });
+    }
+    public static void ConfigureResponseCaching(this IServiceCollection services) => services.AddResponseCaching();
 
 
     public static void RegisterDependencies(this IServiceCollection services)

@@ -34,6 +34,7 @@ public class TeachersController : BaseApiController
 
 
     [HttpGet]
+    [ResponseCache(CacheProfileName = "30SecondsCaching")]
     public async Task<IActionResult> GetTeachers()
     {
         try
@@ -46,9 +47,6 @@ public class TeachersController : BaseApiController
         {
             _logger.LogError($"Something went wrong in the {nameof(GetTeachers)} action {ex}");
             return StatusCode(500, "Internal server error");
-        }
-        finally
-        {
         }
     }
 
