@@ -22,8 +22,7 @@ public static class ServiceExtension
 
     public static void ConfigureSqlContext(this IServiceCollection services, IConfiguration configuration) =>
         services.AddDbContext<RepositoryContext>(
-            opts => opts.UseSqlServer(configuration.GetConnectionString("sqlConnection"),
-                b => b.MigrationsAssembly("StudentTeacher.Repo")));
+             opts => opts.UseInMemoryDatabase(configuration.GetConnectionString("sqlConnection")));
 
     public static void ConfigureRepositoryManager(this IServiceCollection services)
         => services.AddScoped<IRepositoryManager, RepositoryManager>();
